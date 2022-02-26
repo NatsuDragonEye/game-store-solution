@@ -1,17 +1,25 @@
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from '@angular/common';
 
 // Modules
 import { FontAwesomeIconsModule } from './modules/font-awesome-icons.modulest';
 import { InternalMaterialModule } from "./modules/ag-material.module";
 
 @NgModule({
-    imports: [
+    imports: [        
+        FormsModule,
+        CommonModule,
+        
         InternalMaterialModule,
-        FontAwesomeIconsModule
+        FontAwesomeIconsModule,        
     ],
     exports: [
+        CommonModule,
+        FormsModule,
+
         InternalMaterialModule,
-        FontAwesomeIconsModule
+        FontAwesomeIconsModule,
     ]
 })
 export class SharedModule {

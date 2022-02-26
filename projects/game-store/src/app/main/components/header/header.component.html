@@ -1,0 +1,16 @@
+<mat-toolbar class="header-container" color="primary">
+    <mat-toolbar-row>
+        <div class="header-title">
+            <span>{{title | uppercase }}</span>
+        </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="mtr-small">
+        <mat-icon>games</mat-icon>
+
+        <ul class="header-options">
+            <li class="header-options-item" *ngFor="let option of headerOptions">
+                <button mat-button>{{option}}</button>
+            </li>
+        </ul>
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,28 @@
+:host {
+    .header-container {
+        .mtr-small {
+            height: 30px;
+        }
+
+        .header-title {
+            display: flex;
+        }
+
+        .header-options {
+            width: 100%;
+
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+
+            .header-options-item {
+                list-style-type: none;
+                margin-right: 10px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
