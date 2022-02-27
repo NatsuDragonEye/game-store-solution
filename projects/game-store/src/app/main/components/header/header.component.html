@@ -2,15 +2,24 @@
     <mat-toolbar-row>
         <div class="header-title">
             <span>{{title | uppercase }}</span>
+            <div class="search-container">
+                <mat-form-field>
+                    <span matPrefix></span>
+                    <input type="text" matInput placeholder="What are you looking for?" name="search">
+                    <button matSuffix mat-button>
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
         </div>
     </mat-toolbar-row>
     <mat-toolbar-row class="mtr-small">
         <mat-icon>games</mat-icon>
-
         <ul class="header-options">
             <li class="header-options-item" *ngFor="let option of headerOptions">
                 <button mat-button>{{option}}</button>
             </li>
         </ul>
+        <button mat-button>Iniciar sessão</button>
     </mat-toolbar-row>
 </mat-toolbar>
