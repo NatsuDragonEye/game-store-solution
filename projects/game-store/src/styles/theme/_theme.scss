@@ -1,0 +1,22 @@
+@use '@angular/material' as mat;
+@use './../../app/main/components/footer/footer.component.scss-theme.scss' as footer;
+@include mat.core();
+
+@mixin application-custom-components($theme) {
+}
+
+// Define a light theme
+$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-accent: mat.define-palette(mat.$pink-palette);
+$light-theme: mat.define-light-theme(
+    (
+        color: (
+            primary: $light-primary,
+            accent: $light-accent,
+        ),
+    )
+);
+
+@include mat.core-theme($light-theme);
+@include mat.all-component-themes($light-theme);
+@include footer.footer-themed-component($light-theme);

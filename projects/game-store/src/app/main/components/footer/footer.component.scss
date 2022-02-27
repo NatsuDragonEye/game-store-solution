@@ -1,0 +1,30 @@
+
+:host {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-description {
+            > p {
+                font-size: 1.2rem;
+            }
+        }
+
+        .footer-link-container {
+            display: flex;
+            flex-direction: row;
+
+            .footer-link-items {
+                margin-right: 3rem;
+            }
+
+            ul > li {
+                list-style-type: none;
+                > a {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
